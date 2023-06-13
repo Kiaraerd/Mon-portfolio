@@ -1,0 +1,387 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #2A292B;
+    color: #E6DCC6;
+    margin:0;
+    font-family: 'Playfair Display', serif;
+    display: grid;
+    grid-template-rows: 1fr auto ;
+    position: relative;
+  
+}
+
+main{
+
+    position: relative;
+}
+
+a{
+    text-decoration: none;
+    color: #E6DCC6;
+    position: relative;
+    padding: 5px;
+
+
+}
+
+header>a:hover{
+    text-decoration: none;
+  
+}
+
+header>a::before{
+
+    content: "";
+    position: absolute;
+    background: #E6DCC6;
+    width: 90%;
+    height: 5px;
+    bottom: 0;
+    transform-origin: 100% 0;
+    transform: scaleX(0);
+    transition: transform 1s;
+}
+
+a:hover::before{
+
+    transform-origin: 0 0;
+    transform: scaleX(1);
+}
+
+
+header{
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 16px 32px;
+    gap:50px; 
+    font-size: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    
+
+}
+
+h1{
+    font-size: 40px;
+    text-align: center;
+}
+
+h2{
+
+    font-size: 40px;
+    text-align: center;
+    font-weight: lighter;
+    color:#2A292B;
+
+}
+
+h3{
+    font-size: 40px;
+    text-align: center;
+    font-weight: lighter;
+    color:#afa182;
+    border-bottom: solid 1px #afa182;
+
+
+}
+
+
+.centrer{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input:hover{
+
+    cursor: pointer;
+}
+
+
+/* ANIMATIONS DE TEXTE */
+
+
+
+.hidden{
+
+    opacity: 0;
+    transform: translateY(-50px);
+    /* transition: all 1s; */
+   
+}
+
+.show{
+
+    opacity: 1;
+    transform: translateY(0);
+    
+}
+
+.anim{
+
+    transition: 0.8s;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ACCUEIL */
+
+.accueil{
+
+    background-color: #2A292B;
+    height: 100vh;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    position: relative;
+}
+
+.accueil>h1{
+
+    font-size:100px; 
+}
+
+.bouton{
+
+    font-size:40px; 
+    text-align: center;
+    border: solid 2px #afa182;
+    border-radius: 20px;
+}
+
+.bouton:hover{
+
+    border: solid 2px #afa182;
+    background-color: #afa182;
+    color: #3D3633;
+}
+
+/* .accueil>h1:nth-child(2){
+
+    font-size:100px; 
+    opacity: 70%;
+    position: absolute;
+    transform: translateY(-80px);
+    animation: opacity50 5s infinite;
+
+}
+
+.accueil>h1:last-child{
+
+    font-size:100px; 
+    opacity: 50%;
+    position: absolute;
+    transform: translateY(-70px);
+    animation: opacity30 5s infinite;
+
+}
+
+@keyframes opacity50 {
+
+    to{
+    transform: translateY(-140px);
+    position: absolute; 
+    opacity: 0;
+    
+    }
+
+}
+
+@keyframes opacity30 {
+
+    to{
+    transform: translateY(-20px);
+    position: absolute; 
+    opacity: 0;
+    
+    }
+
+} */
+
+/* A PROPOS */
+
+.apropos{
+
+    background-color: #3D3633;
+    height: 100vh;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.apropos>.hidden>div{
+
+    
+    width: 50vw;
+    font-size: larger;
+    text-align: center;
+
+   
+}
+
+.apropos>.show:hover{
+
+    transform: translateY(20px);
+    cursor:pointer;
+}
+
+
+.apropos>div>h1{
+
+    text-align: center;
+}
+
+/* mes projets */
+
+.mes_projets{
+
+    background-color: #2A292B;
+    height: 100vh;
+    display: grid;
+    align-content: center;
+   
+}
+
+
+.mes_projets>h1{
+
+    text-align: center;
+}
+
+.filtre_projets{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+}
+
+.zone{
+
+    background-color: #E6DCC6;
+    height: 300px;
+    width: 300px;
+
+}
+
+.zone:hover{
+
+    background-color: #675D58;
+    color: #E6DCC6;
+    cursor:pointer;
+}
+
+.zone:hover>h2{
+
+    color: #E6DCC6;
+}
+
+
+.zone:hover>.centrer>svg{
+
+    stroke: #E6DCC6;
+}
+
+
+
+/* CONTACT */
+
+
+.contacter{
+
+    background-color: #675D58;
+    height: 100vh;
+    display: grid; 
+    place-items: center;
+    align-content: center;
+
+
+}
+
+.contacter>h1{
+
+    text-align: center;
+
+}
+
+
+
+form{
+    padding: 64px 32px;
+    border-radius: 50px;
+    width: 50vw;
+    color: #E6DCC6;
+    font-size: larger;
+    font-weight:bolder; 
+
+}
+
+
+.form_elt {
+	display: flex;
+	align-items: center;
+	gap: 16px;
+	margin-bottom: 16px;
+}
+
+.form_elt>label{
+	display: flex;
+	gap: 8px;
+	align-items: center;
+	width: 100%;
+}
+
+
+.input_contact{
+    justify-content: center;
+    background-color: #E6DCC6;
+    height: 23px;
+    width: 472px;
+    border-radius: 4px;
+    border:none;
+
+}
+
+
+.valid_form{
+
+        background-color: #3D3633;
+        border-radius: 8px;
+        justify-content: center;
+        color: #fff;
+        font-size: 20px;
+        padding: 16px 4px;
+        cursor: pointer;
+        width: 30%;
+        margin: auto;
+        display: block;
+        border: none;
+        font-weight: bold;
+
+}
+
+.rs{
+    margin-top: 20px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rs:hover{
+
+    cursor: pointer;
+    fill:#2A292B;
+}
+

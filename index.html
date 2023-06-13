@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+    <script defer src="js/animations.js"></script>
+
+
+</head>
+
+<body>
+
+    <header>
+
+        <a href="#welcome">Accueil</a>
+        <a href="#about">À propos</a>
+        <a href="#projets">Projets</a>
+        <a href="#contact">Contact</a>
+    </header>
+
+    <main>
+
+
+        <section class="accueil" id="welcome">
+
+            <h1> PORTFOLIO </h1>
+            <!-- <h1> PORTFOLIO </h1>
+            <h1> PORTFOLIO </h1> -->
+            <a class="bouton" href="pdf/Kiara Erard CV.pdf"> Mon CV </a>
+
+        </section>
+
+        <section class="apropos" id="about">
+
+            <section class="hidden" data-class="anim" data-delay=200>
+
+                <h1> À PROPOS </h1>
+
+                <div> Actuellement étudiante en <b>première année de BUT Métiers du Multimédia et de l'Internet
+                        (MMI)</b>, je suis à la recherche d'une <b> alternance</b> pour ma deuxième année. Dans la
+                    continuité de mon cursus, je souhaiterais intégrer le parcours <b>"Création Numérique"</b> qui
+                    recouvre toutes les <b> matières relatives au graphisme, l'infographie, l'audiovisuel et le motion
+                        design.</b> Ainsi j'espère trouver une entreprise qui m'offrira <b> l'opportunité d'approfondir
+                        mes connaissances et mes compétences dans ces domaines.</b> <br> <br> Si votre entreprise peut
+                    également m'apporter des connaissances en développement Front End et utilisation de Wordpress, ce serait un réel
+                    plus pour moi. Ce site n'est pas parfait mais c'est un site que j'ai tenté de coder moi-même</div>
+
+            </section>
+
+        </section>
+
+
+        <section class="mes_projets" id="projets">
+
+            <section class="hidden"  data-class="anim" data-delay=200>
+
+
+                <h1> MES PROJETS </h1>
+
+
+                <section class="filtre_projets">
+
+                    <a href="projet.html" class="infographie zone">
+
+                        <h2> Infographie </h2>
+
+                        <div class="centrer">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24"
+                                fill="none" stroke="#675D58" stroke-width="2.5" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <polygon points="14 2 18 6 7 17 3 17 3 13 14 2"></polygon>
+                                <line x1="3" y1="22" x2="21" y2="22"></line>
+                            </svg>
+                        </div>
+                    </a>
+
+                    <a href="projet.html#audiovisuel" class="audiovisuel zone">
+
+                        <h2> Audiovisuel </h2>
+
+                        <div class="centrer">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24"
+                                fill="none" stroke="#675D58" stroke-width="2.5" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <g transform="translate(2 3)">
+                                    <path
+                                        d="M20 16a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V5c0-1.1.9-2 2-2h3l2-3h6l2 3h3a2 2 0 0 1 2 2v11z" />
+                                    <circle cx="10" cy="10" r="4" />
+                                </g>
+                            </svg>
+                        </div>
+
+
+                    </a>
+
+                    <a href="projet.html#programmation" class="web zone">
+                        <h2> Web </h2>
+                        <div class="centrer">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24"
+                                fill="none" stroke="#675D58" stroke-width="2.5" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                                <line x1="8" y1="21" x2="16" y2="21"></line>
+                                <line x1="12" y1="17" x2="12" y2="21"></line>
+                            </svg>
+                        </div>
+
+                    </a>
+
+
+                </section>
+
+            </section>
+
+        </section>
+
+
+
+        <section class="contacter" id="contact">
+
+            <section class="hidden"  data-class="anim" data-delay=200>
+
+                <h1> CONTACT </h1>
+
+                <a class="bouton" href="mailto:kiaraerard9@gmail.com? subject=subject text"> Contactez moi </a>
+
+                <!-- <form>
+
+                    <div class="form_elt">
+                        <label for=""> Nom </label>
+                        <input class="input_contact" type="text" id="nom" placeholder="Votre nom" required>
+                    </div>
+
+                    <div class="form_elt">
+                        <label for=""> Prénom </label>
+                        <input class="input_contact" type="text" id="prenom" placeholder="Votre prenom" required>
+                    </div>
+
+                    <div class="form_elt">
+                        <label for=""> Mail </label>
+                        <input class="input_contact" type="email" id="email" placeholder="Votre email" required >
+                    </div>
+
+                    <div class="form_elt">
+                        <label for=""> Message </label>
+                        <textarea class="input_contact" id="message" rows="4" placeholder="Votre message"> </textarea>
+                    </div>
+
+                    <button class="valid_form" type="submit" name="clic" value="ok">Envoyer</button>
+
+                </form> -->
+
+                <a href="https://www.linkedin.com/in/kiaraerard/" class="rs">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="49" height="49" viewBox="0 0 24 24" fill="#E6DCC6">
+                        <path
+                            d="M20 0a4 4 0 0 1 4 4v16a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V4a4 4 0 0 1 4-4h16zM8.95 9.4H6.16v8.1h2.8V9.4zm6.84-.19c-1.32 0-2 .63-2.38 1.16l-.13.18V9.4h-2.79l.01.49V17.5h2.78v-4.52a1.52 1.52 0 0 1 1.52-1.64c.96 0 1.37.66 1.41 1.66v4.5H19v-4.64c0-2.49-1.37-3.65-3.2-3.65zM7.58 5.5C6.62 5.5 6 6.1 6 6.9c0 .73.54 1.32 1.38 1.4h.18c.97 0 1.57-.62 1.57-1.4-.01-.8-.6-1.4-1.55-1.4z" />
+                    </svg>
+                </a>
+
+            </section>
+
+        </section>
+
+    </main>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
